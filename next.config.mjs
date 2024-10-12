@@ -1,4 +1,8 @@
+import withSvg from "next-svgr";
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = withSvg({
+    
+});
 
 export default nextConfig;

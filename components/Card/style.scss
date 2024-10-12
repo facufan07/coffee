@@ -1,0 +1,50 @@
+.product-container{
+    height: 170px;
+    width: 230px;
+    box-sizing: border-box;
+
+    .image{
+        height: 110px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    .content-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        .name{
+            color: #FEF7EE;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        .price{
+            color: #536159;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background-color: #BEE3CC;
+            padding: 4px 6px;
+            border-radius: 5px;
+        }
+    }
+    
+    .content-opinion{
+        display: flex;
+        align-items: center;
+        .icon{
+            margin-right: 5px;
+        }
+        .rating{
+            color: #FEF7EE;
+            margin-right: 5px;
+            font-size: 0.725rem;
+            font-weight: 800;
+        }
+        .votes{
+            color: #6F757C;
+            font-size: 0.6725rem;
+            font-weight: 1000;
+        }
+    }
+    
+}
