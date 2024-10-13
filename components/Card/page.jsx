@@ -11,7 +11,10 @@ export default function Card({ available, image, name, popular, price, rating, v
             backgroundSize: "cover",
             backgroundPosition: "center"}}
             >
-
+                {popular &&(
+                    <h1 className="popular">Popular</h1>
+                )}
+                
             </div>
             <div className="content-info">
                 <h1 className="name">{name}</h1>
@@ -23,17 +26,24 @@ export default function Card({ available, image, name, popular, price, rating, v
                 <>
                     <Star className="icon"/>
                     <h4 className="votes">No ratings</h4>
+                    {!available &&(
+                        <span className="sold-out">Sold out</span>
+                    )}
                 </>
                 :
                 <>
                     <StarFill className="icon"/>
                     <h3 className="rating">{rating}</h3>
                     <h4 className="votes">{`(${votes} votes)`}</h4>
+                    {!available &&(
+                        <span className="sold-out">Sold out</span>
+                    )}
                 </>
                 }
                 
                 
             </div>
+            
             
         </div>
     )

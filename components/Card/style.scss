@@ -7,6 +7,17 @@
         height: 110px;
         margin-bottom: 10px;
         border-radius: 10px;
+        padding: 5px;
+        .popular{
+            font-size: 0.625rem;
+            font-weight: 600;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+            padding-left: 10px;
+            background-color: #F6C768;
+            width: 46px;
+        }
     }
     .content-info{
         display: flex;
@@ -47,4 +58,10 @@
         }
     }
     
+    .sold-out{
+        color: #ED735D;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-left: 55px;
+    }
 }
